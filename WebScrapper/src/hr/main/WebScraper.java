@@ -1,4 +1,4 @@
-/* Hrvoje Vlahovic ©*/
+/* Hrvoje Vlahovic © */
 
 package hr.main;
 
@@ -21,13 +21,16 @@ public class WebScraper {
 
 		ParserUrl startParser = new ParserUrl();
 
-		startParser.setURL(enteredUrl);
+		startParser.setUrl(enteredUrl);
+		startParser.glueCarUrl("10000", "20000", "2010", "2016", "600", "45", "150", "50000", "150000");
 
-		System.out.println(startParser.getURL());
+		System.out.println(startParser.getUrl());
 
 		HtmlData loadHtml = new HtmlData();
 		
-		loadHtml.getHtmlData(enteredUrl);
+		//loadHtml.getHtmlData(enteredUrl);
+		//loadHtml.getHtmlDataAll(enteredUrl);
+		loadHtml.getNjuskaloCarData(enteredUrl);
 
 	}
 
