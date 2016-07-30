@@ -1,3 +1,5 @@
+/* Hrvoje Vlahovic ©*/
+
 package hr.main;
 
 import java.util.Scanner;
