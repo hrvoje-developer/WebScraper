@@ -23,6 +23,7 @@ public class HtmlData {
 			for (Element el : img) {
 				String src = el.absUrl("src");
 				System.out.println(src);
+				System.out.println(src);
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
